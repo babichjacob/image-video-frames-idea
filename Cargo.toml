@@ -1,0 +1,17 @@
+[package]
+name = "image-video-frames-idea"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-channel = "1.9.0"
+avif-serialize = "0.8.1"
+futures = "0.3.28"
+image = { version = "0.24.6", features = ["avif", "webp-encoder"] }
+nalgebra = { version = "0.32.3", features = ["rayon"] }
+rav1e = "0.6.6"
+ravif = "0.11.2"
+tincture = "1.0.0"
+tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread", "fs", "sync"] }
